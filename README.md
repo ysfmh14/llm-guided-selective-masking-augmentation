@@ -47,8 +47,13 @@ Make sure you have Python 3.8+ installed, then run:
     pip install -r requirements.txt
 
 ### 3. Prepare Data
+Place your datasets and lexicon files in the appropriate format, and configure all required parameters in config.py.
 
-Place your datasets and lexicon files in the appropriate format, and update the paths in `config.py`:
+Update the following variables:
 
-- `FINE_TUNING_DATA_FILE`
-- `LEXIC_FILE`
+ - DATA_PATH: path to the main dataset file
+ - TEXT_COL: name of the text column in the dataset
+ - LABEL_COL: name of the label column in the dataset
+ - LEXICON_PATH: path to the domain lexicon file
+ - LLM_MODEL: name of the LLM to use for sampling (e.g., "unsloth/Meta-Llama-3.1-8B-Instruct")
+ - HF_TOKEN: Hugging Face access token for loading the LLM
