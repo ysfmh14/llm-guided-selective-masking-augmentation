@@ -17,7 +17,7 @@ df = load_dataset(DATA_PATH, TEXT_COL, LABEL_COL)
 
 # Strategy spécifique
 def select_mask_positions(content, mask_prob=0.2):
-    tokens = bert_tokenizer.tokenize(content)
+    tokens = bert_tokenizer.tokenize(content)[:500]
 
     candidate_indices = [
         i for i, tok in enumerate(tokens)
@@ -41,8 +41,7 @@ def select_mask_positions(content, mask_prob=0.2):
 # Augmentation
 def augment(text):
 
-    tokens = bert_tokenizer.tokenize(text)
-    masked_positions = select_mask_positions(tokens)
+    masked_positions, tokens = select_mask_positions(tokens)
 
     input_tokens = tokens.copy()
 
