@@ -16,7 +16,7 @@ llm_tokenizer, llm_model = load_llm(LLM_MODEL, HF_TOKEN)
 df = load_dataset(DATA_PATH, TEXT_COL, LABEL_COL)
 
 # Strategy spécifique
-def select_mask_positions(content, mask_prob=0.4):
+def select_mask_positions(content, mask_prob=0.2):
     tokens = bert_tokenizer.tokenize(content)[:510]
 
     tfidf_scores = dict(
