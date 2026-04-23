@@ -15,24 +15,24 @@ Ensuring efficient One Health surveillance using textual sources presents signif
 
 ## 🧩 Project Structure
 
-llm-guided-selective-masking-augmentation/
-│
-├── strategies/
-│ ├── sm_nonlex_llm.py
-│ ├── sm_lex_llm.py
-│ ├── sm_nonlex_tfidf_llm.py
-│ └── sm_lex_tfidf_llm.py
-│
-├── common/
-│ ├── llm.py
-│ ├── bert.py
-│ ├── data.py
-│ ├── lexicon.py
-│ └── utils.py
-│
-├── config.py
-├── requirements.txt
-└── README.md
+    llm-guided-selective-masking-augmentation/
+    │
+    ├── strategies/
+    │ ├── sm_nonlex_llm.py
+    │ ├── sm_lex_llm.py
+    │ ├── sm_nonlex_tfidf_llm.py
+    │ └── sm_lex_tfidf_llm.py
+    │
+    ├── common/
+    │ ├── llm.py
+    │ ├── bert.py
+    │ ├── data.py
+    │ ├── lexicon.py
+    │ └── utils.py
+    │
+    ├── config.py
+    ├── requirements.txt
+    └── README.md
 
 
 ---
