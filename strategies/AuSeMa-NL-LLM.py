@@ -18,7 +18,6 @@ df = load_dataset(DATA_PATH, TEXT_COL, LABEL_COL)
 # Strategy spécifique
 def select_mask_positions(content, mask_prob=0.2):
     tokens = bert_tokenizer.tokenize(content)
-    # tokens = tokens[:510]
 
     candidate_indices = [
         i for i, tok in enumerate(tokens)
