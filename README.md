@@ -51,7 +51,7 @@ Place your datasets and lexicon files in the appropriate format, and configure a
 
 Update the following variables:
 
- - # DATA_PATH:# path to the main dataset file
+ - **DATA_PATH:** path to the main dataset file
  - # TEXT_COL:# name of the text column in the dataset
  - # LABEL_COL:# name of the label column in the dataset
  - # LEXICON_PATH:# path to the domain lexicon file
