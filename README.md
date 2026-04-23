@@ -2,7 +2,7 @@
 
 This repository provides the implementation of the **LLM-guided text augmentation framework using selective masking strategies** introduced in the proposed framework:
 
-***LLM-Guided Selective Masking Strategies for Robust Text Data Augmentation in Epidemiological Surveillance***
+***Improving Text Classification in the One Health Context through Selective Masking Data Augmentation with LLM-Guided Sampling***
 
 ---
 
@@ -18,17 +18,16 @@ Ensuring efficient One Health surveillance using textual sources presents signif
     llm-guided-selective-masking-augmentation/
     │
     ├── strategies/
-    │ ├── sm_nonlex_llm.py
-    │ ├── sm_lex_llm.py
-    │ ├── sm_nonlex_tfidf_llm.py
-    │ └── sm_lex_tfidf_llm.py
+    │ ├── AuSeMa-NL-LLM.py
+    │ ├── AuSeMa-L-LLM.py
+    │ ├── AuSeMa-NLT-LLM.py
+    │ └── AuSeMa-LT-LLM.py
     │
     ├── common/
     │ ├── llm.py
-    │ ├── bert.py
-    │ ├── data.py
-    │ ├── lexicon.py
-    │ └── utils.py
+    │ ├── bert-loader.py
+    │ ├── data-loader.py
+    │ ├── lexicon-loader.py
     │
     ├── config.py
     ├── requirements.txt
@@ -46,7 +45,7 @@ Make sure you have Python 3.8+ installed, then run:
 
     pip install -r requirements.txt
 
-### 3. Prepare Data
+### 3. Prepare Data and Parameters
 Place your datasets and lexicon files in the appropriate format, and configure all required parameters in config.py.
 
 Update the following variables:
@@ -57,3 +56,14 @@ Update the following variables:
  - ***LEXICON_PATH:*** path to the domain lexicon file
  - ***LLM_MODEL:*** name of the LLM to use for sampling (e.g., "unsloth/Meta-Llama-3.1-8B-Instruct")
  - ***HF_TOKEN:*** Hugging Face access token for loading the LLM
+
+## 📁 Citation
+If you use this code, please cite the original paper:
+
+***Improving Text Classification in the One Health Context through Selective Masking Data Augmentation with LLM-Guided Sampling***
+## 📬 Contact
+If you have any questions, encounter issues with the code, or would like to know more about our work, please contact the corresponding author:
+
+📧 Personal email (permanent): ysfmh2002@gmail.com
+
+📧 Professional email (not sure if permanent): mahdoubi.youssef@usms.ac.ma
