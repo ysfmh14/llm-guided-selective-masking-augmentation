@@ -51,9 +51,9 @@ Place your datasets and lexicon files in the appropriate format, and configure a
 
 Update the following variables:
 
- - # DATA_PATH: # path to the main dataset file
- - # TEXT_COL: # name of the text column in the dataset
- - # LABEL_COL: # name of the label column in the dataset
- - # LEXICON_PATH: # path to the domain lexicon file
- - # LLM_MODEL: # name of the LLM to use for sampling (e.g., "unsloth/Meta-Llama-3.1-8B-Instruct")
- - # HF_TOKEN: # Hugging Face access token for loading the LLM
+ - # DATA_PATH:# path to the main dataset file
+ - # TEXT_COL:# name of the text column in the dataset
+ - # LABEL_COL:# name of the label column in the dataset
+ - # LEXICON_PATH:# path to the domain lexicon file
+ - # LLM_MODEL:# name of the LLM to use for sampling (e.g., "unsloth/Meta-Llama-3.1-8B-Instruct")
+ - # HF_TOKEN:# Hugging Face access token for loading the LLM
