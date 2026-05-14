@@ -29,7 +29,7 @@ def select_tfidf_mask_positions_no_adjacent(content, mask_prob=0.2):
             continue
         
         if tok in lexique_set:
-            score = random.uniform(0.0, 0.4)  # Lexique → score faible aléatoire
+            score = random.uniform(0.0, 0.2)  # Lexique → score faible aléatoire
         else:
             score = tfidf_scores.get(tok, 0.0)  # TF-IDF réel
         token_scores.append((i, score))
